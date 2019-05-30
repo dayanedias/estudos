@@ -1,0 +1,16 @@
+header.header {
+
+    background-color: #0063B1;
+    padding: 0px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: var(--shadow);
+}
+
+header.header h3 {
+    text-align: left;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+
+}
