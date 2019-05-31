@@ -5,18 +5,7 @@
     --search-height: 48px;
     --process-height: 48px;
 
-    --shadow:
-        0 2px 23px 0 rgba(0, 0, 0, 0.1),
-        0 2px 49px 0 rgba(0, 0, 0, 0.06);
 }
-
-/* Font */
-
-/* @font-face{
-    font-family: 'RobotoMono';
-    src: url('../fonts/RobotoMono-Thin.ttf');
-  } */
-
 * {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,6 +30,10 @@
 
 header.header {
     grid-area: header;
+}
+
+.search {
+    grid-area: search;
 }
 
 aside.menu-area {

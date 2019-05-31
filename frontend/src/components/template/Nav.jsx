@@ -5,13 +5,13 @@ export default props =>
     <aside className="menu-area">
         <nav className="menu">
             <a href="#/">
-                <i className="fa fa-home" /> Início
+                <i className="tag-process fa fa-bookmark" /> Todos Processos
             </a>
             <a href="#/users">
-                <i className="fa fa-users" /> Usuários
+                <i className="tag-title fa fa-tag" /> Etiquetas
             </a>
             <a href="#/label">
-                <i className="fa fa-heart" /> Etiqueta
+                <i className="tag-closed" /> Feitos
             </a>
         </nav>
     </aside>

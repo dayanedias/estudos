@@ -1,16 +1,23 @@
 header.header {
 
     background-color: #0063B1;
-    padding: 0px 15px;
-    overflow: hidden;
+    padding: 12px 15px;
     white-space: nowrap;
-    box-shadow: var(--shadow);
+    overflow: hidden;
 }
 
 header.header h3 {
-    text-align: left;
     float: left;
-    font-size: 18px;
-    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    font-size:  18px;
+    color: #FFFFFF;
 
+}
+
+header.header i {
+    text-align: right;
+    float: right;
+    color: #f9f9f9;
+    font-size: 25px;
 }
