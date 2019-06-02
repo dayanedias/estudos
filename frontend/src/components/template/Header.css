@@ -4,6 +4,7 @@ header.header {
     padding: 12px 15px;
     white-space: nowrap;
     overflow: hidden;
+    font-weight: 500;
 }
 
 header.header h3 {
@@ -18,6 +19,7 @@ header.header h3 {
 header.header i {
     text-align: right;
     float: right;
+    font-weight: 500;
     color: #f9f9f9;
-    font-size: 25px;
+    font-size: 30px;
 }

@@ -1,8 +1,8 @@
 :root {
     
     --header-height: 48px;
-    --aside-width: 225px;
     --search-height: 48px;
+    --aside-width: 225px;
     --process-height: 48px;
 
 }
@@ -16,14 +16,22 @@
 .app {
     margin: 0px;
     display: grid;
-    grid-template-columns: var(--aside-width) 1fr;
+    grid-template-columns: 
+        var(--aside-width) 
+        1fr
+        ;
+
     grid-template-rows: 
         var(--header-height)
-        1fr;
+        var(--search-height)
+        1fr
+        ;
 
     grid-template-areas:
         "header header"
-        "menu content";
+        "menu search"
+        "menu content"
+        ;
     height: 100vh;
     background-color: #eaeaea;
 }

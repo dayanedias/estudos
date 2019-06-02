@@ -1,13 +1,12 @@
 import React from 'react'
 import './Main.css'
-import Header from './Header';
+import Header from './Header'
+import Cards from '../home/Cards'
 
 export default props =>
     <React.Fragment>
         <Header {...props}/>
-        <main className="content container-fluid">
-            <div className="p-3 mt-3">
-                {props.children}
-            </div>            
-        </main>
+        <div className="main">
+            <Cards />
+        </div>
     </React.Fragment>

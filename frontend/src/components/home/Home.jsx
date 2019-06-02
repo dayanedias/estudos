@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Main from '../template/Main'
+import Cards from '../home/Cards'
 
-export default props =>
-    <Main title="APP">
-        <div className="display-4" > Teste 1 div </div>
-        <hr />
-        <p className="mb-0">teste de escrita abaixo do título</p>
-    </Main>
+export default class Home extends Component {
+
+    render() {
+        return (
+            <Main title="APP">
+                <Cards />
+            </Main>
+        )
+    }
+
+}
