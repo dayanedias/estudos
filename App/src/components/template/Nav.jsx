@@ -24,29 +24,39 @@ class Nav extends Component {
                         <div className="tags pt-3">
                             Etiquetas
                         </div>
-                         
-                             {dbData.tags.map(tag => {
-                                 return ( 
-                                 <div key={tag.id} className="row pt-3">
-                                     <i className="fa fa-minus pt-1 pr-2" style={{ color: tag.background }}></i>
-                                     <td> {tag.name} </td>
-                                     {/* <td> {document.getElementById({`${tag.id}`}.length)} </td> */}
-                                 </div>
-                                 )
-                             })}
+
+                        {dbData.tags.map(tag => {
+                            return (
+                                <div key={tag.id} className="row pt-3">
+                                    <i className="fa fa-minus pt-1 pr-2" style={{ color: tag.background }}></i>
+                                    <td> {tag.name} </td>
+
+                                </div>
+                            )
+                        })}
+
+                        {dbData.cards.map(card => {
+                            return (
+                                <div>
+                                    {/* <span>{card.id}</span> */}
+                                    <span>{card.length}</span>
+                                    {console.log(card.length)}
+                                </div>
+                            )
+                        })}
 
                         <div className="col-xs-12">
                             <i className="tag-icon fa fa-tag" />
                             <input id='new-tag' className="newTag mt-3"
-                                placeholder=' Criar Etiqueta' 
-                                onFocus={(e) => e.target.placeholder = ""} 
+                                placeholder=' Criar Etiqueta'
+                                onFocus={(e) => e.target.placeholder = ""}
                                 onBlur={(e) => e.target.placeholder = " Criar Etiqueta"}
                                 onChange={(e) => {
                                     this.setState({ name: e.target.value })
                                 }}
-                                value={this.state.name}/>
-                            <i className="check fa fa-check"/>
-                            
+                                value={this.state.name} />
+                            <i className="check fa fa-check" />
+
                         </div>
 
                     </div>
