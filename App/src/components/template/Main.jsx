@@ -1,7 +1,7 @@
 import React from 'react'
 import './Main.css'
 import Header from './Header'
-import Cards from '../home/Cards'
+import Cards from './Cards'
 
 export default props =>
     <React.Fragment>
